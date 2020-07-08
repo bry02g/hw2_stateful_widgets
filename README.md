@@ -12,6 +12,8 @@ lib/main.dart
 
 ## Question 1
 
+You will need to wire up the **onPressed** function in order to make the text turn <span style="color:green">green</span> when pressed.
+
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question1.gif" width="40%">
 
 ## Question 2
