@@ -7,7 +7,6 @@ class Question1 extends StatefulWidget {
 
 class _Question1State extends State<Question1> {
 
-  bool _setGreen = false;
 
   @override
   Widget build(BuildContext context) {
