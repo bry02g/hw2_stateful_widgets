@@ -4,7 +4,6 @@ import 'package:hw1/questions/question2.dart';
 import 'package:hw1/questions/question3.dart';
 import 'package:hw1/questions/question4.dart';
 import 'package:hw1/questions/question5.dart';
-import 'package:hw1/questions/question6.dart';
 
 void main() {
   runApp(MyApp());
@@ -87,19 +86,6 @@ class MainPage extends StatelessWidget {
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: RaisedButton(
-                  child: Text('Question 6'),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Question6()),
-                    );
-                  },
-                ),
-              ),
-
             ]),
       ),
     );
