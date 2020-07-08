@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
 
-class Question3 extends StatelessWidget {
-  // This widget is the root of your application.
+class Question3 extends StatefulWidget {
+  @override
+  _Question3State createState() => _Question3State();
+}
+
+class _Question3State extends State<Question3> {
+  TextEditingController _newPasswordTextEditingController =
+      TextEditingController();
+  TextEditingController _confirmNewPasswordTextEditingController =
+      TextEditingController();
+
+  bool _match = true;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.lightBlue,
             leading: IconButton(
               icon: Icon(
                 Icons.arrow_back_ios,
@@ -16,55 +28,64 @@ class Question3 extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
-            title: Text('Icons'),
+            title: Text('Question 3'),
           ),
-          body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        Icon(
-                          Icons.favorite_border,
-                          size: 40,
-                        ),
-                        Icon(
-                          Icons.favorite,
-                          size: 40,
-                          color: Colors.red,  )
-                      ],
+          body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Spacer(),
+                Text(
+                  'Reset Password',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+                Spacer(),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextField(
+                    controller: _newPasswordTextEditingController,
+                    decoration: InputDecoration(
+                      hintText: 'New Password',
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-
-                        // ADD FB ICONS HERE
-
-
-                      ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextField(
+                    controller: _confirmNewPasswordTextEditingController,
+                    decoration: InputDecoration(
+                      hintText: 'Confirm New Password',
                     ),
-  
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        
-                        // ADD REDDIT ICONS HERE
+                  ),
+                ),
+                Spacer(),
+                Text(
+                  _match ? "" : "Passwords Don't Match",
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.red,
+                  ),
+                ),
+                Spacer(),
+                RaisedButton(
+                    child: Text('Done'),
+                    color: Colors.lightBlue,
+                    onPressed: () {
+                      setState(() {
+                        var newPassword =
+                            _newPasswordTextEditingController.text;
+                        var confirmPassword =
+                            _confirmNewPasswordTextEditingController.text;
 
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        
-
-                        // ADD SNAP ICONS HERE
-
-                      ],
-                    ),
-                  ]),
+                        _match = (newPassword == confirmPassword);
+                      });
+                    }),
+                Spacer(),
+              ],
             ),
           )),
     );
