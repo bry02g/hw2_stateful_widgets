@@ -29,7 +29,7 @@ class _Question5State extends State<Question5> {
                 Navigator.pop(context);
               },
             ),
-            title: Text('Images'),
+            title: Text('Question 5'),
           ),
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,

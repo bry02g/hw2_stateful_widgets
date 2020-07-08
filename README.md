@@ -44,13 +44,15 @@ urls:
 
 "https://i.insider.com/5e32f2a324306a19834af322?width=1800&format=jpeg&auto=webp"
 
- <br>
+ <br/>
+
 "https://i.insider.com/5de2cd3fe94e8635a17ca8ae?width=1100&format=jpeg&auto=webp"
 
-<br>
+<br/>
 
 "https://media4.s-nbcnews.com/j/newscms/2019_47/3112746/191121-baby-yoda-cs-959a_ed40d38efa3cde7ab92df2d5492a81a5.fit-1120w.jpg"
 
+<br/>
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question5.gif" width="40%">
 
 
