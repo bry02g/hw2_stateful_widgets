@@ -12,7 +12,7 @@ lib/main.dart
 
 ## Question 1
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question1.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question1.gif" width="40%">
 
 ## Question 2
 
