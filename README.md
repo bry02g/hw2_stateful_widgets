@@ -18,27 +18,27 @@ lib/main.dart
 
 
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question2.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question2.gif" width="40%">
 
 ## Question 3
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question3.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question3.gif" width="40%">
 
 
 ## Question 4
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question4.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question4.gif" width="40%">
 
 ## Question 5 
 
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question5.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question5.gif" width="40%">
 
 
 
 ## Question 6
 
-<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question6.png" width="40%">
+<img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question6.gif" width="40%">
 
 
 

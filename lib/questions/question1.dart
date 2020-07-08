@@ -6,11 +6,15 @@ class Question1 extends StatefulWidget {
 }
 
 class _Question1State extends State<Question1> {
+
+  bool _setGreen = false;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.green,
             leading: IconButton(
               icon: Icon(
                 Icons.arrow_back_ios,
@@ -21,14 +25,38 @@ class _Question1State extends State<Question1> {
               },
             ),
             title: Text('Question 1'),
-            actions: <Widget>[
-              // ADD ICON HERE
-            ],
           ),
           body: Center(
-            child: null,
-          )
-        ),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Press button to make me green',
+                      textAlign: TextAlign.center,
+                      style: TextStyle( 
+                        fontSize: 25,
+
+                        // WILL NEED TO MODIFY THIS LINE
+                        color: Colors.black,
+
+                        
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: RaisedButton(
+                        child: Text('Make Green'),
+                        color: Colors.green,
+                        onPressed: (){
+                         // ADD YOUR CODE HERE
+                        },
+                      ),
+                    )
+                  ]),
+            ),
+          )),
     );
   }
 }
