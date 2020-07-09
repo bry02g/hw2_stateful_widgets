@@ -45,7 +45,7 @@ Hint: will need to use two Icons.favorite_border & Icons.favorite. Simillar to q
 
 For this question you will be working with TextFields and [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html). The TextEditingController allows you to access/modify the content of the TextField.
 
-The two TextEditingController variables have been provided and haven assigned to their respected Textfields.
+The two TextEditingController variables have been provided and assigned to their respected Textfields.
 
 ```dart
 TextEditingController newPasswordTextEditingController =
@@ -72,6 +72,21 @@ if the two text fields have the same password if they don't display
 
 
 ## Question 4
+NOTE: When you first run Question 4 you will set both the checkbox and button are disable. This occurs when onChanged/onPressed are set to **null**
+
+For this question you will need to handle the state of the checkbox when check the sign up button should become enabled. 
+(The Sign up button doesn't need to do anything when pressed.)
+
+Hint: The onChanged callback has a parameter which represent if the checkbox was checked/unchecked (true/false)
+```dart
+onChanged : (newValue) {}
+```
+
+You will need to used the button behavior of beeing disables when given a null callback
+
+```dart
+onPressed: agreed ? () {} : null
+```
 
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question4.gif" width="40%">
 

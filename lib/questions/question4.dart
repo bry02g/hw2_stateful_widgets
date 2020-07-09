@@ -6,6 +6,7 @@ class Question4 extends StatefulWidget {
 }
 
 class _Question4State extends State<Question4> {
+  
   bool _agreed = false;
 
   @override
@@ -36,18 +37,18 @@ class _Question4State extends State<Question4> {
                   "I agree to the terms and conditions",
                   style: TextStyle(fontSize: 16),
                   ),
-                onChanged: (newValue) {
-                  setState(() {
-                    _agreed = newValue;
-                  });
-                }),
+
+                // WILL NEED TO CHANGE THIS LINE
+                onChanged: null),
             RaisedButton(
               child: Text(
                 'Sign Up',
                 style: TextStyle(color: Colors.white),
               ),
               color: Colors.purple,
-              onPressed: _agreed ? () {} : null,
+
+              // WILL NEED TO CHANGE THIS LINE
+              onPressed: null,
             ),
           ]),
     ));
