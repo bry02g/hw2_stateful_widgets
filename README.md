@@ -19,7 +19,7 @@ Hint: you will need to make a variable to store if the button was press. Using t
 ex.
 ```dart 
 ...
-// this is a ternary: 
+// this is a ternary operator: 
 //<boolean expression> ? <result when true> : <result when false>
 color: _wasPressed ? Colors.green : Colors.black
 
@@ -28,13 +28,15 @@ color: _wasPressed ? Colors.green : Colors.black
 ```
 <br/>
 
+NOTE: Don't forget to call **SetState** when you handle the button press otherwise flutter won't know to rebuild the UI.
 
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question1.gif" width="40%">
 
 ## Question 2
 
 You will need to wire up the IconButton to toggle between filled/unfilled heart.
-(hint: will need to use Icons.favorite_border & Icons.favorite)
+
+Hint: will need to use two Icons.favorite_border & Icons.favorite. Simillar to question 1, this time you will need to swap the icons depending on the state your variable holds.
 
 
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question2.gif" width="40%">
@@ -53,7 +55,7 @@ You will need to wire up the IconButton to toggle between filled/unfilled heart.
 Remember the Baby Yoda question from the previous homework.
 Well today the requirements have changed instead of showing a single Baby Yoda image you now will need to cycle between three images when the the icon button is pressed.
 
-As you might recall the last homework was about **stateless** widgets so for this question you will need to convert that widget into a **statefull** widget before adding in the image cycling feature that require state.
+As you might recall the last homework was about **stateless** widgets so for this question you will need to convert that widget into a **stateful** widget before adding in the image cycling feature that require state.
 
 urls:
 
