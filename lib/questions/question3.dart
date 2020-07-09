@@ -6,13 +6,13 @@ class Question3 extends StatefulWidget {
 }
 
 class _Question3State extends State<Question3> {
-  TextEditingController _newPasswordTextEditingController =
+  TextEditingController newPasswordTextEditingController =
       TextEditingController();
 
-  TextEditingController _confirmNewPasswordTextEditingController =
+  TextEditingController confirmNewPasswordTextEditingController =
       TextEditingController();
 
-  bool _match = true;
+  bool match = true;
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class _Question3State extends State<Question3> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    controller: _newPasswordTextEditingController,
+                    controller: newPasswordTextEditingController,
                     decoration: InputDecoration(
                       hintText: 'New Password',
                     ),
@@ -57,7 +57,7 @@ class _Question3State extends State<Question3> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    controller: _confirmNewPasswordTextEditingController,
+                    controller: confirmNewPasswordTextEditingController,
                     decoration: InputDecoration(
                       hintText: 'Confirm New Password',
                     ),
@@ -65,7 +65,7 @@ class _Question3State extends State<Question3> {
                 ),
                 Spacer(),
                 Text(
-                  _match ? "" : "Passwords Don't Match",
+                  match ? "" : "Passwords Don't Match",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.red,
@@ -77,7 +77,7 @@ class _Question3State extends State<Question3> {
                     color: Colors.lightBlue,
                     onPressed: () {
                       setState(() {
-                   
+                        // ADD YOUR CODE HERE
                       });
                     }),
                 Spacer(),

@@ -43,6 +43,31 @@ Hint: will need to use two Icons.favorite_border & Icons.favorite. Simillar to q
 
 ## Question 3
 
+For this question you will be working with TextFields and [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html). The TextEditingController allows you to access/modify the content of the TextField.
+
+The two TextEditingController variables have been provided and haven assigned to their respected Textfields.
+
+```dart
+TextEditingController newPasswordTextEditingController =
+      TextEditingController();
+
+  TextEditingController confirmNewPasswordTextEditingController =
+      TextEditingController();
+```
+
+```dart
+// Assigning TextEditingController to the TextField
+TextField(
+    ...
+    controller: newPasswordTextEditingController,
+    ...
+)
+```
+
+You will need to wire up the Done button so that when it's pressed it check 
+if the two text fields have the same password if they don't display 
+"Passwords Don't Match"
+
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question3.gif" width="40%">
 
 
