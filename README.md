@@ -74,7 +74,7 @@ if the two text fields have the same password if they don't display
 ## Question 4
 NOTE: When you first run Question 4 you will set both the checkbox and button are disable. This occurs when onChanged/onPressed are set to **null**
 
-For this question you will need to handle the state of the checkbox when check the sign up button should become enabled. 
+For this question you will need to handle the state of the checkbox when checked the "Sign Up" button should become enabled. 
 (The Sign up button doesn't need to do anything when pressed.)
 
 Hint: The onChanged callback has a parameter which represent if the checkbox was checked/unchecked (true/false)
@@ -96,6 +96,8 @@ Remember the Baby Yoda question from the previous homework.
 Well today the requirements have changed instead of showing a single Baby Yoda image you now will need to cycle between three images when the the icon button is pressed.
 
 As you might recall the last homework was about **stateless** widgets so for this question you will need to convert that widget into a **stateful** widget before adding in the image cycling feature that require state.
+
+Note: Sometimes it take a few seconds for the images to load from the internet that's ok.
 
 urls:
 
