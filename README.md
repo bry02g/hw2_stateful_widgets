@@ -72,7 +72,7 @@ if the two text fields have the same password if they don't display
 
 
 ## Question 4
-NOTE: When you first run Question 4 you will set both the checkbox and button are disable. This occurs when onChanged/onPressed are set to **null**
+NOTE: When you first run Question 4 you will see that both the checkbox and button are disable. This occurs when onChanged/onPressed are set to **null**
 
 For this question you will need to handle the state of the checkbox when checked the "Sign Up" button should become enabled. 
 (The Sign up button doesn't need to do anything when pressed.)
