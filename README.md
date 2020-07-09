@@ -36,7 +36,7 @@ NOTE: Don't forget to call **SetState** when you handle the button press otherwi
 
 You will need to wire up the IconButton to toggle between filled/unfilled heart.
 
-Hint: will need to use two Icons.favorite_border & Icons.favorite. Simillar to question 1, this time you will need to swap the icons depending on the state your variable holds.
+Hint: will need to use two icons Icons.favorite_border & Icons.favorite. Simillar to question 1, this time you will need to swap the icons depending on the state your variable holds.
 
 
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question2.gif" width="40%">
@@ -45,7 +45,7 @@ Hint: will need to use two Icons.favorite_border & Icons.favorite. Simillar to q
 
 For this question you will be working with TextFields and [TextEditingController](https://api.flutter.dev/flutter/widgets/TextEditingController-class.html). The TextEditingController allows you to access/modify the content of the TextField.
 
-The two TextEditingController variables have been provided and assigned to their respected Textfields.
+Two TextEditingController variables have been provided and assigned to their respected Textfields.
 
 ```dart
 TextEditingController newPasswordTextEditingController =
