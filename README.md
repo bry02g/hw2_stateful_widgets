@@ -19,7 +19,8 @@ Hint: you will need to make a variable to store if the button was press. Using t
 ex.
 ```dart 
 ...
-
+// this is a ternary: 
+//<boolean expression> ? <result when true> : <result when false>
 color: _wasPressed ? Colors.green : Colors.black
 
 ...
