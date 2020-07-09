@@ -8,6 +8,7 @@ class Question3 extends StatefulWidget {
 class _Question3State extends State<Question3> {
   TextEditingController _newPasswordTextEditingController =
       TextEditingController();
+
   TextEditingController _confirmNewPasswordTextEditingController =
       TextEditingController();
 
@@ -76,12 +77,7 @@ class _Question3State extends State<Question3> {
                     color: Colors.lightBlue,
                     onPressed: () {
                       setState(() {
-                        var newPassword =
-                            _newPasswordTextEditingController.text;
-                        var confirmPassword =
-                            _confirmNewPasswordTextEditingController.text;
-
-                        _match = (newPassword == confirmPassword);
+                   
                       });
                     }),
                 Spacer(),

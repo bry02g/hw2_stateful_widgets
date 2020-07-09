@@ -1,4 +1,4 @@
-# hw1
+# hw2
 
 The objective for this homework is to add interactive stateful Flutter widgets for each of the questions so that they match the screenshots provided.
 
@@ -13,6 +13,20 @@ lib/main.dart
 ## Question 1
 
 You will need to wire up the **onPressed** function in order to make the text turn <span style="color:green;">green</span> when pressed.
+
+Hint: you will need to make a variable to store if the button was press. Using this variable you can used a if conditional or ternary operator to know which color to assign to the Text.
+
+ex.
+```dart 
+...
+
+color: _wasPressed ? Colors.green : Colors.black
+
+...
+
+```
+<br/>
+
 
 <img src="https://github.com/bry02g/hw2_stateful_widgets/blob/master/screenshots/question1.gif" width="40%">
 
